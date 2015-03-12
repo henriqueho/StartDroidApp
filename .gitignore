@@ -1,6 +1,9 @@
 # Built application files
 *.apk
 *.ap_
+.classpath
+.project
+.settings/org.eclipse.jdt.core.prefs
 
 # Files for the Dalvik VM
 *.dex
