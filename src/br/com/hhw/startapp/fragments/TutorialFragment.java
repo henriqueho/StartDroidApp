@@ -31,7 +31,7 @@ public class TutorialFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 
-		View contentView = inflater.inflate(R.layout.fragment_tutorial,
+		View contentView = inflater.inflate(R.layout.fragment_tutorial_start_app,
 				container, false);
 
 		tutorialImage = (ImageView) contentView

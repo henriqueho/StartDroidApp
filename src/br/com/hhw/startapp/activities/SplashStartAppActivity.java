@@ -19,7 +19,7 @@ public class SplashStartAppActivity extends ActionBarActivity implements Runnabl
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_splash);
+		setContentView(R.layout.activity_splash_start_app);
 		Handler handler = new Handler();
 		handler.postDelayed(this, SHOW_SPLASH_MILLIS);
 	}
@@ -27,7 +27,7 @@ public class SplashStartAppActivity extends ActionBarActivity implements Runnabl
 	@Override
 	public void run() {
 		startActivity(new Intent(SplashStartAppActivity.this,
-				StartAppActivity.class));
+				MainStartAppActivity.class));
 		overridePendingTransition(R.anim.fadein, R.anim.fadeout);
 		finish();
 //		new Handler().postDelayed(new Runnable() {

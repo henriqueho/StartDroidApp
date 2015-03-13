@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".activities.StartAppActivity"
+            android:name=".activities.MainStartAppActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,7 +32,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.TutorialActivity"
+            android:name=".activities.MenuStartAppActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.TutorialStartAppActivity"
             android:label="@string/home"
             android:theme="@style/FullscreenTheme" >
         </activity>

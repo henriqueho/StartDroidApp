@@ -14,7 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class TutorialActivity extends ActionBarActivity {
+public class TutorialStartAppActivity extends ActionBarActivity {
 
 	private Button closeButton;
 
@@ -30,7 +30,7 @@ public class TutorialActivity extends ActionBarActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		setContentView(R.layout.activity_tutorial);
+		setContentView(R.layout.activity_tutorial_start_app);
 
 		closeButton = (Button) findViewById(R.id.tutorial_close);
 

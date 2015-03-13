@@ -27,7 +27,7 @@ public class CustomDialogHelpers {
 		LayoutInflater inflater = ownerActivity.getLayoutInflater();
 		ViewGroup root = null;
 		ViewGroup dialogLayout = (ViewGroup) inflater.inflate(
-				R.layout.dialog_simple, root);
+				R.layout.dialog_simple_start_app, root);
 
 		if (title != null && title.length() > 0) {
 			TextView textTitle = (TextView) dialogLayout
