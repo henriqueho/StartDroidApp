@@ -1,6 +1,7 @@
-package br.com.hhw.startapp.activities.helpers;
+package br.com.hhw.startapp.helpers;
 
 import br.com.hhw.startapp.R;
+import br.com.hhw.startapp.handlers.CustomDialogHandler;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -10,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class CustomDialogHelpers {
+public class CustomDialogHelper {
 
 	public static void showGenericDialog(Context context, String text, final CustomDialogHandler dialogHandler) {
 		showGenericDialog(context, null, text, dialogHandler);

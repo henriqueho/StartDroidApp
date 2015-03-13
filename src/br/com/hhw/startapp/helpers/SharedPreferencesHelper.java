@@ -1,4 +1,4 @@
-package br.com.hhw.startapp.activities.helpers;
+package br.com.hhw.startapp.helpers;
 
 import android.annotation.TargetApi;
 import android.content.Context;
