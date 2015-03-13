@@ -1,22 +1,14 @@
 package br.com.hhw.startapp.activities;
 
-import java.util.ArrayList;
-
-import android.content.Intent;
 import android.os.Bundle;
 import br.com.hhw.startapp.R;
 import br.com.hhw.startapp.activities.helpers.CustomDialogHandler;
 import br.com.hhw.startapp.activities.helpers.CustomDialogHelpers;
-import br.com.hhw.startapp.activities.helpers.SharedPreferencesHelper;
-import br.com.hhw.startapp.fragments.HomeFragment;
-import br.com.hhw.startapp.fragments.TesteFragment;
 import br.com.how.hhwslidemenu.HHWMenuActivity;
-import br.com.how.hhwslidemenu.HHWMenuItem;
-import br.com.how.hhwslidemenu.HHWSlideMenu;
 
 public abstract class StartAppActivity extends HHWMenuActivity {
 	
-	protected abstract void showTutorial();
+	protected abstract void onCreateStartApp();
 
 //	protected void createMenu() {
 //
@@ -50,7 +42,7 @@ public abstract class StartAppActivity extends HHWMenuActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		showTutorial();
+		onCreateStartApp();
 	}
 
 	@Override
