@@ -12,7 +12,7 @@ import android.support.v7.app.ActionBarActivity;
  * 
  * @see SystemUiHider
  */
-public class SplashActivity extends ActionBarActivity implements Runnable {
+public class SplashStartAppActivity extends ActionBarActivity implements Runnable {
 
 	private static final int SHOW_SPLASH_MILLIS = 3000;
 
@@ -26,8 +26,8 @@ public class SplashActivity extends ActionBarActivity implements Runnable {
 
 	@Override
 	public void run() {
-		startActivity(new Intent(SplashActivity.this,
-				MainActivity.class));
+		startActivity(new Intent(SplashStartAppActivity.this,
+				StartAppActivity.class));
 		overridePendingTransition(R.anim.fadein, R.anim.fadeout);
 		finish();
 //		new Handler().postDelayed(new Runnable() {
