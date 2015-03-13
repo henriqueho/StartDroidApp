@@ -15,10 +15,15 @@
     <!-- telas -->
     <string name="home">Home</string>
     <string name="splash">Splash</string>
-    
+
     <!-- mensagens -->
     <string name="voce_realmente_deseja_sair_do_aplicativo_">Você realmente deseja sair do aplicativo?</string>
-    
+    <string name="ops">Ops!</string>
+    <string name="error">Erro!</string>
+    <string name="error_pacotes">Não foi possível carregar lista de pacotes</string>
+    <string name="error_pacote">Não foi possível carregar pacote</string>
+    <string name="tentar_de_novo">tentar novamente</string>
+
     <!-- Tela de Tutorial -->
     <string name="tutorial">Tutorial</string>
     <string name="tutorial_text_1">Pelo menu lateral você acessa todas áreas do aplicativo.</string>

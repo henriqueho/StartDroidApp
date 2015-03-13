@@ -7,6 +7,7 @@ import android.os.Bundle;
 import br.com.hhw.startapp.R;
 import br.com.hhw.startapp.fragments.DestaqueFragment;
 import br.com.hhw.startapp.fragments.HomeFragment;
+import br.com.hhw.startapp.fragments.ListaFragment;
 import br.com.hhw.startapp.fragments.TesteFragment;
 import br.com.hhw.startapp.handlers.CustomDialogHandler;
 import br.com.hhw.startapp.helpers.CustomDialogHelper;
@@ -27,8 +28,7 @@ public class MainStartAppActivity extends MenuStartAppActivity {
 			menuItems.add(new HHWMenuItem("Início", new HomeFragment(),
 					getResources().getDrawable(R.drawable.ic_launcher)));
 			menuItems.add(new HHWMenuItem("Destaque", new DestaqueFragment()));
-			menuItems.add(new HHWMenuItem("Tela 3", fragment
-					.newInstance("Tela - 3")));
+			menuItems.add(new HHWMenuItem("Lista", new ListaFragment()));
 			menuItems.add(new HHWMenuItem("Tela 4", fragment
 					.newInstance("Tela - 4")));
 			menuItems
