@@ -1,5 +1,6 @@
 package br.com.hhw.startapp.helpers;
 
+import br.com.hhw.startapp.R;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
@@ -17,8 +18,6 @@ public class TryAgainHelper extends LinearLayout implements OnClickListener {
 
 	private Context context;
 	
-	private int idButton;
-
 	private OnClickToTryAgain onClickToTryAgain;
 
 	public interface OnClickToTryAgain {
@@ -36,18 +35,17 @@ public class TryAgainHelper extends LinearLayout implements OnClickListener {
 	public TryAgainHelper(Context context,int idButton) {
 		super(context);
 		this.context = context;
-		this.idButton = idButton;
 	}
 
 	@Override
 	protected void onFinishInflate() {
 		super.onFinishInflate();
-		init(context, idButton);
+		init(context);
 	}
 
-	private void init(Context context, int idButton) {
+	private void init(Context context) {
 		Button tryRecoverButton = (Button) this
-				.findViewById(idButton);
+				.findViewById(R.id.without_internet_button_try_again);
 
 		tryRecoverButton.setOnClickListener(this);
 	}
@@ -58,15 +56,15 @@ public class TryAgainHelper extends LinearLayout implements OnClickListener {
 	
 	public void setOnClickAndMessage(OnClickToTryAgain onClickToTryAgain,
 			String msg) {
-//		setMessage(msg);
+		setMessage(msg);
 		this.onClickToTryAgain = onClickToTryAgain;
 	}
 	
-//	private void setMessage(String msg) {
-//		TextView text = (TextView) this
-//				.findViewById(R.id.without_internet_subtitle);
-//		text.setText(msg);
-//	}
+	private void setMessage(String msg) {
+		TextView text = (TextView) this
+				.findViewById(R.id.without_internet_subtitle);
+		text.setText(msg);
+	}
 
 	@Override
 	public void onClick(View v) {
